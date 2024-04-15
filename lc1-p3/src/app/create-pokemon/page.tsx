@@ -66,7 +66,7 @@ const Page = () => {
                             <div className="label">
                                 <span className="label-text font-semibold">Weight</span>
                             </div>
-                            <input type="text" placeholder="Weight" className="input input-bordered w-full" name='weight'
+                            <input type="number" placeholder="Weight" className="input input-bordered w-full" name='weight'
                                 value={input.weight}
                                 onChange={handleInput} />
                         </div>
