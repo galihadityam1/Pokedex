@@ -18,10 +18,10 @@ const Sidebar = () => {
                         <ul className="menu p-4 w-80 min-h-full flex flex-col gap-10 text-black">
                             {/* Sidebar content here */}
                             <li ><Link href="/">Home</Link></li>
-                            <li ><Link href="/create-task">Add</Link></li>
-                            <li><Link href="/frontend">Fire</Link></li>
-                            <li><Link href="/backend">Water</Link></li>
-                            <li><Link href="/mobile">Grass</Link></li>
+                            <li ><Link href="/create-pokemon">Add</Link></li>
+                            <li><Link href="/fire">Fire</Link></li>
+                            <li><Link href="/water">Water</Link></li>
+                            <li><Link href="/grass">Grass</Link></li>
                         </ul>
 
                     </div>
