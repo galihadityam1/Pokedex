@@ -2,9 +2,11 @@
 
 import { BASE_URL } from "@/constant";
 import { error } from "console";
+import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
 
 export async function fetchDataType(type: string) {
-    console.log(type);
+    // console.log(type);
 
     const res = await fetch(`${BASE_URL}?type=${type}`, {
         cache: "no-store"
@@ -18,3 +20,4 @@ export async function fetchDataType(type: string) {
     return await res.json()
 
 }
+

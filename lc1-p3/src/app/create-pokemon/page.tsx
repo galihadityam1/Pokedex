@@ -2,8 +2,10 @@
 import React, { useState } from 'react'
 import { AddPokemon } from '../actions/clientActions'
 import { InputPokemon } from '@/Type'
+import { useRouter } from 'next/navigation'
 
 const Page = () => {
+    const router = useRouter()
     const [input, setInput] = useState<InputPokemon>({
         name: "",
         description: "",
@@ -28,9 +30,15 @@ const Page = () => {
 
     const handleSubmit = async (event: any) => {
         event.preventDefault()
-        console.log(input);
+        // console.log(input);
 
-        await AddPokemon(input)
+        let res = await AddPokemon(input)
+        // console.log(res);
+        if (res) {
+            router.push('/')
+
+        }
+
     }
     return (
         <>

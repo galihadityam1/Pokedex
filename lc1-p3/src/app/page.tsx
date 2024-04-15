@@ -3,7 +3,7 @@ import { Pokemon } from "@/Type";
 import Pokecard from "@/components/Pokecard";
 import { BASE_URL } from "@/constant";
 
-async function fetchData() {
+export async function fetchData() {
   const res = await fetch(`${BASE_URL}`, {
     cache: 'no-store'
   })

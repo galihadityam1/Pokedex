@@ -20,7 +20,7 @@ const Page = async ({ params }: { params: { id: string } }) => {
     console.log(params);
     const data = await fetchDataDetail(params.id)
     const pokemon = data[0]
-    console.log(pokemon);
+    // console.log(pokemon);
 
 
 
@@ -29,7 +29,7 @@ const Page = async ({ params }: { params: { id: string } }) => {
             <div className='w-full p-8 mt-8'>
                 <div className="card lg:card-side bg-base-100 shadow-xl border">
                     <div className='grid grid-row w-full'>
-                        <div className='p-4'>
+                        <div className='p-4 text-3xl font-semibold border-b' >
                             Detail Pokemon
                         </div>
                         <div className=' flex flex-row w-full'>
