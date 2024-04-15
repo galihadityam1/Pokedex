@@ -4,8 +4,6 @@ import { useParams, useRouter } from 'next/navigation'
 import React from 'react'
 
 const Sidebar = () => {
-    const params = useParams<{ page: string }>()
-    // console.log(params);
     return (
         <>
             <div className="drawer w-96 bg-white text-black h-screen sticky left-0 font-semibold border-r">

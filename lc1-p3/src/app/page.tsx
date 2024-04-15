@@ -9,7 +9,8 @@ async function fetchData() {
   })
 
   if (!res.ok) {
-    return console.log('error');
+    console.log('error');
+    return
 
   }
 
@@ -26,12 +27,10 @@ export default async function Home() {
         <div className="text-xl font-semibold">
           Pokemon List
         </div>
-        <div className="w-screen">
-          <div className="flex flex-row w-[70%] ml-8 gap-3 justify-between">
-            {data && data.map((poke: Pokemon, i: number) => (
-              <Pokecard key={i} pokemon={poke} />
-            ))}
-          </div>
+        <div className="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-14">
+          {data && data?.map((poke: Pokemon, i: number) => (
+            <Pokecard key={i} pokemon={poke} />
+          ))}
         </div>
       </div>
     </>

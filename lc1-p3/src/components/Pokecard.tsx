@@ -14,7 +14,7 @@ export default function Pokecard({ pokemon }: { pokemon: Pokemon }) {
           component="img"
           height="140"
           image={pokemon.image}
-          alt="green iguana"
+          alt={pokemon.name}
         />
         <CardContent>
           <div className='flex flex-row justify-between'>
