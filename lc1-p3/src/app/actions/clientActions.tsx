@@ -4,7 +4,7 @@ import { BASE_URL } from "@/constant";
 import { useRouter } from "next/navigation";
 
 export async function AddPokemon(newPoke: InputPokemon) {
-const router = useRouter()
+    const router = useRouter()
     // console.log(newPoke);
     const { name, description, weight, image, type } = newPoke
 
