@@ -47,8 +47,11 @@ export default function Pokecard({ pokemon }: { pokemon: Pokemon }) {
           <div onClick={() => {
             handleDelete({ id: pokemon.id })
           }} className='bg-red-200 rounded'>
-            <Button size="small" className='text-red-500'>
+            <Button size="small">
+              <div className='text-red-500'>
               DELETE
+
+              </div>
             </Button>
           </div>
         </CardActions>

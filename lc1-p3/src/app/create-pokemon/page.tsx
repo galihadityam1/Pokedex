@@ -24,7 +24,7 @@ const Page = () => {
             [name]: value
         })
 
-        console.log(input);
+        // console.log(input);
 
     }
 
